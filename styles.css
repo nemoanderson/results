@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+  /* Primary */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orange-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Neutral*/
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Gradients */
+  /* Background */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /* Circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+/* Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`. */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.top-left-results-container {
+  position: relative;
+  margin: 0 auto;
+  background: linear-gradient(360deg, hsla(241, 81%, 54%, 1) 5%, hsla(252, 100%, 67%, 1) 100%);
+  border-radius: 0% 0% 10% 10%;
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  width: 375px;
+}
+
+.top-left-results-heading {
+  text-align: center;
+  color: var(--Light-lavender);
+  padding: 26px 0 10px 0;
+  font-size: 18px;
+}
+
+/* Add transparency */
+.results-circle {
+  border-radius: 50%;
+  background-color: var(--Light-royal-blue);
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 16px;
+  background-image: linear-gradient(to top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.top-circle-score {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.bottom-circle-score {
+  text-align: center;
+  color: var(--Light-lavender);
+}
+
+/* Great */
+.results-in-words {
+  margin: 10px auto;
+  padding-top: 10px;
+  color: var(--White);
+  text-align: center;
+  font-size: 25px;
+}
+
+.results-paragraph {
+  color: var(--Light-lavender);
+  text-align: center;
+  margin: 0px 45px;
+  padding-bottom: 40px;
+}
+/* Top Ends*/
+
+.bottom-right-results-container {
+  margin: auto;
+  position: relative;
+  background-color: var(--White);
+  width: 375px; 
+  /*
+  border-radius: 0% 0% 10% 10%;
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  */
+}
+
+.bottom-right-results-container h2 {
+  padding: 20px 0 0 40px;
+  font-size: 20px;
+
+}
+
+.reaction, .memory, .verbal, .visual {
+  margin: 15px auto;
+  width: 80%;
+  height: 56px;
+  border-radius: 10px;
+}
+
+.reaction-left, .memory-left, .verbal-left, .visual-left {
+  position: absolute;
+  left: 3em;
+  padding:14px 0;
+}
+
+.reaction-numbers, .memory-numbers, .verbal-numbers, .visual-numbers {
+  position: absolute;
+  right:3em;
+  padding: 14px 0;
+}
+
+.first-word {
+  font-weight: 800;
+}
+
+.reaction-left {
+  color: var(--Light-red);
+}
+
+.memory-left {
+  color: var(--Orange-yellow);
+}
+
+.verbal-left {
+  color: var(--Green-teal);
+}
+
+.visual-left {
+  color: var(--Violet-blue);
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.summary-btn-container {
+  padding-bottom: 10px;
+}
+
+.summary-btn {
+  background-color: var(--Dark-gray-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  border: none;
+  color: white;
+  padding: 15px 30%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+
+/* Desktop */
+@media (min-width: 720px) {
+  body {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.container {
+  display: flex;
+  }
+
+.top-left-results-container {
+  border-radius: 10% ;
+  }
+
+.bottom-right-results-container {
+  border-radius: 0% 10% 10% 0%;
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  }
+
+.results-paragraph {
+margin: 0px 55px;
+}
+
+/* Bottom of media desktop */
+}
