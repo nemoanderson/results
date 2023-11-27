@@ -34,6 +34,11 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+header {
+  text-align: center;
+  color: var(--White);
+}
+
 .container {
   background-color: var(--White);
   box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
@@ -109,7 +114,7 @@ body {
   */
 }
 
-.bottom-right-results-container h1 {
+.bottom-right-results-container h2 {
   padding: 20px 0 0 40px;
   font-size: 20px;
 
@@ -224,4 +229,15 @@ margin: 0px 55px;
 }
 
 /* Bottom of media desktop */
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
