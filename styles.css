@@ -34,7 +34,7 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
-header {
+.header {
   text-align: center;
   color: var(--White);
 }
@@ -234,7 +234,7 @@ margin: 0px 55px;
 /* Footer */
 
 .attribution {
-  font-size: 11px;
+  font-size: 9px;
   text-align: center;
 }
 
