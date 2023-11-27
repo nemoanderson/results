@@ -189,6 +189,10 @@ body {
   border-radius: 25px;
 }
 
+.summary-btn:hover {
+  background: rgb(46, 43, 233);
+  background: linear-gradient(0deg, rgba(46, 43, 233, 1) 25%, rgba(120, 87, 255, 1) 120%);
+}
 
 /* Desktop */
 @media (min-width: 720px) {
