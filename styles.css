@@ -34,12 +34,19 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+.container {
+  background-color: var(--White);
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  
+}
+
 .top-left-results-container {
   position: relative;
   margin: 0 auto;
   background: linear-gradient(360deg, hsla(241, 81%, 54%, 1) 5%, hsla(252, 100%, 67%, 1) 100%);
   border-radius: 0% 0% 10% 10%;
-  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  /*
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue); */
   width: 375px;
 }
 
@@ -195,6 +202,7 @@ body {
 
 .container {
   display: flex;
+  border-radius: 10%;
   }
 
 .top-left-results-container {
@@ -203,7 +211,8 @@ body {
 
 .bottom-right-results-container {
   border-radius: 0% 10% 10% 0%;
-  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);
+  /*
+  box-shadow: 0 0 21px -5px var(--Dark-gray-blue);*/
   }
 
 .results-paragraph {
